@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "concurrently \"pnpm dev:server\" \"next dev --turbopack\"",
+    "dev:server": "pnpm exec node server.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -19,6 +20,7 @@
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "babel-preset-bindle": "link:..\\..\\babel-preset-bindle",
+    "concurrently": "^9.1.2",
     "eslint": "^9",
     "eslint-config-next": "15.3.0",
     "tailwindcss": "^4"
