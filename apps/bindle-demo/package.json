@@ -1,0 +1,26 @@
+{
+  "name": "bindle-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bindle-client": "link:..\\..\\packages\\bindle-client",
+    "bindle-serveur": "link:..\\..\\packages\\bindle-serveur",
+    "next": "15.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "babel-preset-bindle": "link:..\\..\\babel-preset-bindle",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.0",
+    "tailwindcss": "^4"
+  }
+}

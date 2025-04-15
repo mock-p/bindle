@@ -1,0 +1,21 @@
+{
+  "name": "bindle-serveur",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist --extensions \".js,.jsx\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "redis": "^4.7.0",
+    "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.0",
+    "@babel/core": "^7.26.10",
+    "babel-preset-bindle": "link:..\\babel-preset-bindle"
+  }
+}
